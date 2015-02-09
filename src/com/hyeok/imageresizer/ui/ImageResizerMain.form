@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.hyeok.imageresizer.ui.ImageResizerMain">
+  <grid id="27dc6" binding="rootPanel" layout-manager="GridLayoutManager" row-count="6" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="10" left="10" bottom="10" right="10"/>
+    <constraints>
+      <xy x="11" y="50" width="633" height="370"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="eb320" class="javax.swing.JRadioButton" binding="hdpiRadioButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="hdpi"/>
+        </properties>
+      </component>
+      <scrollpane id="6e02c" binding="scrollPane">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="7" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="8d5cd" class="javax.swing.JTable" binding="table1" default-binding="true">
+            <constraints/>
+            <properties>
+              <alignmentX value="0.5"/>
+              <autoCreateRowSorter value="true"/>
+              <intercellSpacing width="1" height="1"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="e32d3" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="b8242" class="javax.swing.JRadioButton" binding="mdpiRadioButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="mdpi"/>
+        </properties>
+      </component>
+      <component id="a178e" class="javax.swing.JRadioButton" binding="xhdpiRadioButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="xhdpi"/>
+        </properties>
+      </component>
+      <component id="5c296" class="javax.swing.JRadioButton" binding="xxhdpiRadioButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="xxhdpi"/>
+        </properties>
+      </component>
+      <component id="3ff0c" class="javax.swing.JRadioButton" binding="xxxhdpiRadioButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="xxxhdpi"/>
+        </properties>
+      </component>
+      <component id="90bca" class="javax.swing.JButton" binding="workButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="5" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="변환"/>
+        </properties>
+      </component>
+      <component id="f2487" class="javax.swing.JButton" binding="button1" default-binding="true">
+        <constraints>
+          <grid row="1" column="5" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="폴더선택"/>
+        </properties>
+      </component>
+      <component id="64b13" class="javax.swing.JLabel" binding="text">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="6" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="이미지 생성 폴더"/>
+        </properties>
+      </component>
+      <component id="d836e" class="javax.swing.JLabel" binding="text1">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="현재 존재하는 이미지 해상도"/>
+        </properties>
+      </component>
+      <component id="a085a" class="javax.swing.JProgressBar" binding="progressBar1" default-binding="true">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="7" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="1f422" class="javax.swing.JCheckBox" binding="showSizeCheckBox">
+        <constraints>
+          <grid row="3" column="4" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <selected value="true"/>
+          <text value="이미지 변환 후 사이즈 보기"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
